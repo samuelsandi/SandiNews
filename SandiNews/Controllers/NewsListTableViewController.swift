@@ -10,13 +10,14 @@ import UIKit
 
 class NewsListTableViewController: UITableViewController {
     private var articleListVM: ArticleListViewModel!
+    private var language: String = "ID"
     
     override func viewDidLoad() {
         setup()
     }
     
     private func setup() {
-        let url = URL(string: "https://newsapi.org/v2/everything?q=bitcoin&from=2019-06-12&sortBy=publishedAt&apiKey=786454ff916248b181af9da19daf7efb")!
+        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=id&apiKey=786454ff916248b181af9da19daf7efb")!
         WebService.init().getArticles(url: url){ articles in
             if let articles = articles {
                 self.articleListVM = ArticleListViewModel(articles: articles)
