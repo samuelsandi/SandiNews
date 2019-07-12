@@ -12,6 +12,8 @@
 		940B66F622D841C6002E4D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B66F522D841C6002E4D0B /* Assets.xcassets */; };
 		940B66F922D841C6002E4D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940B66F722D841C6002E4D0B /* LaunchScreen.storyboard */; };
 		940B670222D8452F002E4D0B /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B670122D8452F002E4D0B /* NewsListTableViewController.swift */; };
+		940B670722D85C2F002E4D0B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B670622D85C2F002E4D0B /* WebService.swift */; };
+		940B670A22D86019002E4D0B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B670922D86019002E4D0B /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		940B66F822D841C6002E4D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		940B66FA22D841C6002E4D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940B670122D8452F002E4D0B /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
+		940B670622D85C2F002E4D0B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		940B670922D86019002E4D0B /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		940B66ED22D841C6002E4D0B /* SandiNews */ = {
 			isa = PBXGroup;
 			children = (
+				940B670522D85C20002E4D0B /* Services */,
 				940B670422D846A3002E4D0B /* Models */,
 				940B670322D84699002E4D0B /* ViewModels */,
 				940B670022D8450D002E4D0B /* Controllers */,
@@ -84,8 +89,17 @@
 		940B670422D846A3002E4D0B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				940B670922D86019002E4D0B /* Article.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		940B670522D85C20002E4D0B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				940B670622D85C2F002E4D0B /* WebService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940B670A22D86019002E4D0B /* Article.swift in Sources */,
+				940B670722D85C2F002E4D0B /* WebService.swift in Sources */,
 				940B670222D8452F002E4D0B /* NewsListTableViewController.swift in Sources */,
 				940B66EF22D841C6002E4D0B /* AppDelegate.swift in Sources */,
 			);
