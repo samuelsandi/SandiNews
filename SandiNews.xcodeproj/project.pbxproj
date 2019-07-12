@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		940B66EF22D841C6002E4D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B66EE22D841C6002E4D0B /* AppDelegate.swift */; };
-		940B66F122D841C6002E4D0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B66F022D841C6002E4D0B /* ViewController.swift */; };
 		940B66F422D841C6002E4D0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940B66F222D841C6002E4D0B /* Main.storyboard */; };
 		940B66F622D841C6002E4D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B66F522D841C6002E4D0B /* Assets.xcassets */; };
 		940B66F922D841C6002E4D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940B66F722D841C6002E4D0B /* LaunchScreen.storyboard */; };
+		940B670222D8452F002E4D0B /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B670122D8452F002E4D0B /* NewsListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		940B66EB22D841C6002E4D0B /* SandiNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandiNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		940B66EE22D841C6002E4D0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		940B66F022D841C6002E4D0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		940B66F322D841C6002E4D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		940B66F522D841C6002E4D0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940B66F822D841C6002E4D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		940B66FA22D841C6002E4D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940B670122D8452F002E4D0B /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,38 @@
 		940B66ED22D841C6002E4D0B /* SandiNews */ = {
 			isa = PBXGroup;
 			children = (
+				940B670422D846A3002E4D0B /* Models */,
+				940B670322D84699002E4D0B /* ViewModels */,
+				940B670022D8450D002E4D0B /* Controllers */,
 				940B66EE22D841C6002E4D0B /* AppDelegate.swift */,
-				940B66F022D841C6002E4D0B /* ViewController.swift */,
 				940B66F222D841C6002E4D0B /* Main.storyboard */,
 				940B66F522D841C6002E4D0B /* Assets.xcassets */,
 				940B66F722D841C6002E4D0B /* LaunchScreen.storyboard */,
 				940B66FA22D841C6002E4D0B /* Info.plist */,
 			);
 			path = SandiNews;
+			sourceTree = "<group>";
+		};
+		940B670022D8450D002E4D0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				940B670122D8452F002E4D0B /* NewsListTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		940B670322D84699002E4D0B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		940B670422D846A3002E4D0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				940B66F122D841C6002E4D0B /* ViewController.swift in Sources */,
+				940B670222D8452F002E4D0B /* NewsListTableViewController.swift in Sources */,
 				940B66EF22D841C6002E4D0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
