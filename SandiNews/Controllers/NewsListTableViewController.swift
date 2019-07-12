@@ -9,6 +9,7 @@
 import UIKit
 
 class NewsListTableViewController: UITableViewController {
+    private var articleListVM: ArticleListViewModel!
     override func viewDidLoad() {
         setup()
     }
